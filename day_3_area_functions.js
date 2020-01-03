@@ -32,3 +32,24 @@ const greet2 = () =>{
 }
 
 const greet3 = () => 'hi world';
+
+const bill = function(products,tax){
+    let total = 0;
+    for(let i=0; i < products.length; i++){
+    total += products[i] + products[i] * tax;
+    }
+
+    return total;
+}
+
+//bill([10,29,23],0.2);
+//12.400000000000002
+
+const bill = (products,tax) => {
+    let total = 0;
+    for(let i=0; i < products.length; i++){
+    total += products[i] + products[i] * tax;
+    }
+
+    return total;
+}
