@@ -50,6 +50,12 @@ const bill = (products,tax) => {
     for(let i=0; i < products.length; i++){
     total += products[i] + products[i] * tax;
     }
-
     return total;
 }
+
+const name = function(){
+    alert("This is alert box!");
+}
+
+//arrow
+const name = () => alert("What is your name?");
